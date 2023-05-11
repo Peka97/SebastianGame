@@ -12,7 +12,11 @@ class Cat(pg.sprite.Sprite):
 	anim_jump_ready_left = []
 	anim_timer = 0
 	counter = 0
+<<<<<<< HEAD
 	speed = 10
+=======
+	speed = 15
+>>>>>>> dev
 	gravity = 8
 	prev_direction = None
 	direction = None
@@ -115,9 +119,15 @@ class Cat(pg.sprite.Sprite):
 		cat_weight, _ = self.image.get_size()
 		cat_weight += 18
 		if self.direction:
+<<<<<<< HEAD
 			if self.direction == 'right' and self.rect.x + cat_weight < screen_weight:
 				self.rect.x += self.speed
 			elif self.direction == 'left' and self.rect.x - cat_weight // 2 > 0:
+=======
+			if self.direction == 'right' and self.rect.x - cat_weight / 2 < screen_weight:
+				self.rect.x += self.speed
+			elif self.direction == 'left' and self.rect.x > 0:
+>>>>>>> dev
 				self.rect.x -= self.speed
 
 	def sit_back_animation(self):
