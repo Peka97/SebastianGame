@@ -48,7 +48,6 @@ class Cat(pg.sprite.Sprite):
 		img_jump_ready_left_2 = pg.image.load('images/cat/jump_ready_left_2.png').convert_alpha()
 		img_jump_ready_left_3 = pg.image.load('images/cat/jump_ready_left_3.png').convert_alpha()
 
-
 		# Формируем коллекции для анимации
 		self.anim_sit_back.extend((
 			img_sit_back_2,
@@ -101,14 +100,6 @@ class Cat(pg.sprite.Sprite):
 		# Выставляем параметры спрайта
 		self.image = self.anim_sit_back[0]
 		self.rect = self.image.get_rect(topleft=(530, 400))
-
-	# mass, size = 1, (60, 60)
-	# moment = pm.moment_for_box(mass, size)
-	# self.body = pm.Body(mass, moment)
-	# self.body.position = self.rect.topleft
-	# self.shape = pm.Poly.create_box(self.body, size)
-	# self.shape.elasticity = 0.4
-	# self.shape.friction = 1.0
 
 	def move(self, screen):
 		screen_weight, screen_height = screen.get_size()

@@ -4,7 +4,6 @@ import os
 import pygame
 import pygame as pg
 
-
 from cat import Cat
 from person import PersonLiza
 from ground import Ground
