@@ -5,7 +5,6 @@ import pygame
 import pygame as pg
 <<<<<<< HEAD
 
-
 from cat import Cat
 from person import PersonLiza
 =======
